@@ -1,5 +1,5 @@
 {
-  "watch": ["./**/*.js"],
+  "watch": ["./**/*.js", "./SentralAPI.json"],
   "execMap": {
     "js": "babel-node"
   }

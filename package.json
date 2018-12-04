@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --inspect server.js"
+    "start": "set DEBUG=translation & nodemon --inspect server.js",
+    "gen-schema": "get-graphql-schema http://localhost:3000/graphql > schema.graphql",
+    "gen-types": "graphql-schema-typescript generate-ts schema.graphql --output schema.d.ts"
   },
   "keywords": [
     "GraphQL",
